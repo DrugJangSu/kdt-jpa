@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_2.xsd" version="3.2">
+    <persistence-unit name="kdt" transaction-type="RESOURCE_LOCAL">
+        <class>chapter03.lesson07.JpaMember</class>
+        <class>chapter03.lesson07.JpaPost</class>
+        <class>chapter03.lesson07.JpaComment</class>
+        <class>chapter03.lesson07.Student</class>
+        <class>chapter03.lesson07.Course</class>
+        <class>chapter03.lesson07.Enrollment</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/YOUR_DATABASE" />
+            <property name="jakarta.persistence.jdbc.user" value="YOUR_DB_USERNAME" />
+            <property name="jakarta.persistence.jdbc.password" value="YOUR_DB_PASSWORD" />
+            <property name="jakarta.persistence.schema-generation.database.action" value="none" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.highlight_sql" value="true" />
+        </properties>
+    </persistence-unit>
+</persistence>

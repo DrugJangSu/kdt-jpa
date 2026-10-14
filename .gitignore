@@ -1,0 +1,83 @@
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+.kotlin
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+### DB 접속 정보 ###
+src/main/resources/META-INF/persistence.xml
+### Local IDE settings and database connections ###
+.idea/
+.run/
+
+### Local secrets (keep sanitized examples only) ###
+.env
+.env.*
+!.env.example
+!.env.sample
+**/META-INF/persistence.xml
+application-local.properties
+application-local.yml
+application-local.yaml
+application-secret*.properties
+application-secret*.yml
+application-secret*.yaml
+credentials.json
+*service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_ed25519
+
+### Local databases, dumps and logs ###
+*.dump
+*.sql.gz
+*.sql.zip
+*.sqlite
+*.sqlite3
+*.db
+*.log
+dumps/
+backups/
